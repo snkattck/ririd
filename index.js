@@ -7,13 +7,12 @@ const app = express();
 const url = require('url');
 const querystring = require('querystring');
 
+const makeDst = (u, qu) => (qu && `${u}?${qu}` || u);
+
 for (const {src, dst} of redirectMap) {
-    console.log(RegExp(src));
     app.use(vhost(RegExp(src), ({path, query}, res) => {
         const u = url.resolve(dst, path);
-        const q = querystring.stringify(query);
-        const finalDst = `${u}?${q}`;
-        res.redirect(finalDst);
+        res.redirect(makeDst(u, querystring.stringify(query)));
     }));
 }
 
