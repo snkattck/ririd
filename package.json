@@ -1,5 +1,5 @@
 {
-  "name": "@snkattc/ririd",
+  "name": "@snkattck/ririd",
   "version": "1.0.1",
   "description": "A simple HTTP redirect microservice in Express.",
   "main": "index.js",
