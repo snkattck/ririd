@@ -10,9 +10,9 @@ describe('http request', function() {
     this.timeout(5000);
 
     before(function () {
-        const { app, http } = require('../index');
+        const { app, run } = require('../index');
         App = app;
-        Http = http;
+        Http = run();
     });
 
     it('method GET HOST http://www.one.pub should 301 redirect to https://another.org', async function() {

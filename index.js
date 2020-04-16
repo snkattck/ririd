@@ -22,7 +22,9 @@ app.use('*', (req, res) => {
     return res.redirect(301, defaultRedirect);
 })
 
+const port = config.has('port') && config.get('port') || 3000;
+
 module.exports = { 
     app, 
-    http: app.listen(3000) 
+    run: () => app.listen(port)
 }

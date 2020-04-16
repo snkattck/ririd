@@ -1,7 +1,7 @@
 {
   "name": "ririd",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple HTTP redirect microservice in Express.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -15,6 +15,9 @@
     "express": "^4.17.1",
     "remove-trailing-slash": "^0.1.0",
     "yargs": "^15.3.1"
+  },
+  "bin": {
+    "ririd": "./ririd.js"
   },
   "devDependencies": {
     "devcert": "^1.1.0",

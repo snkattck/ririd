@@ -1,6 +1,2 @@
 {
-    "defaultRedirect": "https://hmdc.harvard.edu",
-    "redirectMap": [
-        { "src": "^(.*)?jots\\.pub$", "dst": "https://techscience.org" }
-    ]
 }
