@@ -1,0 +1,9 @@
+{
+    "defaultRedirect": "https://www.proxywow.com",
+    "redirectMap": [
+        { "src": "^(.*\\.)?one\\.pub$", "dst": "https://another.org" },
+        { "src": "^(.*\\.)?two\\.pub$", "dst": "https://line.struggle", "withPath": false },
+        { "src": "^(.*\\.)?three\\.pub$", "dst": "https://in.one", "withQs": false },
+        { "src": "^(.*\\.)?four\\.pub$", "dst": "https://unit.cell", "withQs": false, "withPath": false }
+    ]
+}
